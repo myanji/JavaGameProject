@@ -1,16 +1,13 @@
 package Character;
-import java.util.Scanner;
 
 public class GiveDoll extends Character {
-    public int favorability;
-
-    public void favorabilityRise(){
-        favorability++;
-    }
-    public void favorabilityDecline(){
-        favorability--;
-    }
-    public void favorabilityInitialization(){
-        favorability = 0;
+    @Override
+    public void numberIncrease() {
+        if (encounterCount < 3) {
+            number ++;
+        }
+        else {
+            number += 5; // 이거 랜덤으로 주는거로 바꾸기
+        }
     }
 }
