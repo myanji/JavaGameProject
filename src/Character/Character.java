@@ -9,6 +9,7 @@ public class Character {
     public Character() {
         this.name = "기본생성자";
         this.encounterCount = 0;
+        // 인형 갯수
         this.number = 0;
     }
 
