@@ -30,6 +30,15 @@ public class GameMain {
                 counter++;
             }
 
+            else if (choice == 3){
+                findChild();
+                counter++;
+            }
+            else if (choice == 4){
+                findCat();
+                counter++;
+            }
+
             System.out.println("----- 모은 인형 정보 ------");
             DollCollection.printCollection();
 
@@ -40,7 +49,7 @@ public class GameMain {
 
         }
 
-        // 엔딩 출력 엔딩 뭔가 이상함 손봐야함
+        // 엔딩 출력
         Ending ending = new Ending();
         if (DollCollection.TotalRarity() >= 28 || counter >= 6) {
             ending.HappyEnding();
@@ -60,5 +69,7 @@ public class GameMain {
 
     public static void findCat() {
         System.out.println("인형을 찾으러 숲으로 갑니다.");
+        System.out.println("\n");
+        Cat.CatFirst();
     }
 }
